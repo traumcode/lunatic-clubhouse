@@ -5,6 +5,7 @@ import React from 'react';
 function Landing(props) {
     return (
         <div className='container landing-page-container'>
+            <h1>test</h1>
             <div className='landing-photo-container' style={{height: '550px'}}>
                 <img className='landing-photo' src='https://i.ibb.co/sCMWk0d/logo-transparent-2.png' alt='landing photo'/>
             </div>
