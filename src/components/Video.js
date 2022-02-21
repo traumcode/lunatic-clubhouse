@@ -1,5 +1,4 @@
 import React, {useState, useEffect } from "react";
-import * as video from "react-dom/test-utils";
 
 const Video = (props) => {
 	const [src] = useState(props.videos[3])
@@ -20,7 +19,7 @@ const Video = (props) => {
 			dangerouslySetInnerHTML={{
 			__html: `
 					<video id="landingVideo" class="app__backgroundVideo landing-video" playsinline autoplay loop muted>
-      					<source src=${src} type="video/mp4" id='landingVideoSource'/>
+      					<source src=${src} type="video/webm" id='landingVideoSource'/>
       						Your browser does not support the video tag.
 					</video>`,
 		}}
