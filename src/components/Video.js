@@ -12,13 +12,14 @@ const Video = (props) => {
 				element.currentTime = 10;
 			}, 9900)
 		})
+		element.play()
 	}, [])
 
 	return (
 		<div
 			dangerouslySetInnerHTML={{
 			__html: `
-					<video id="landingVideo" class=" landing-video" autoplay loop muted>
+					<video id="landingVideo" class="app__backgroundVideo landing-video" playsinline autoplay loop muted>
       					<source src=${src} type="video/mp4" id='landingVideoSource'/>
       						Your browser does not support the video tag.
 					</video>`,
