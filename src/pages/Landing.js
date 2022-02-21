@@ -14,7 +14,7 @@ function Landing(props) {
         <div className='container landing-page-container'>
             <Video videos={myVideos}/>
             <div className='landing-social-icons-container'>
-                <a href='https://discord.gg/ec8Q7U6B' className='landing-icon'>
+                <a href='https://discord.gg/6CnJQMCYVw' className='landing-icon'>
                     <i className="fab fa-brands fa-discord icon-3d"/>
                 </a>
                 <a href='https://drive.google.com/file/d/1usTlobZxb7GcgYlhVcT38Kgn-vURrNVd/view?usp=sharing' className='landing-icon'>
