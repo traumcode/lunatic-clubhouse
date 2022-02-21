@@ -1,0 +1,83 @@
+$redColor: rgb(89, 241, 255);
+$blueColor: rgb(249, 118, 253);
+
+.landing-page-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.landing-social-icons-container {
+  display: flex;
+  position:absolute;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: clamp(20px, 3vw, 30px);
+  top:85%;
+  z-index: 2;
+}
+
+.landing-icon {
+  color: #c50dfb;
+}
+
+.landing-icon:hover {
+  color: #4bafe4
+}
+
+.landing-icon:active {
+  color: #2d98cb
+}
+.icon-3d  {
+  padding: 10px;
+  -webkit-animation: icon3d 200ms 10;
+  animation: icon3d 200ms 10;
+  color: rgba(21, 120, 231, 0.6);
+
+  &:hover {
+    -webkit-animation: icon3d 200ms infinite;
+    animation: icon3d 200ms infinite;
+  }
+}
+
+@keyframes icon3d {
+  0% {
+    text-shadow: 5px 4px $redColor, -5px -6px $blueColor;
+  }
+  25% {
+    text-shadow: -5px -6px $redColor, 5px 4px $blueColor;
+  }
+  50% {
+    text-shadow: 5px -4px $redColor, -8px 4px $blueColor;
+  }
+  75% {
+    text-shadow: -8px -4px $redColor, -5px -4px $blueColor;
+  }
+  100% {
+    text-shadow: -5px 0 $redColor, 5px -4px $blueColor;
+  }
+}
+
+@media (max-width: 376px) {
+  .landing-social-icons-container {
+    top: 75%;
+  }
+}
+
+@media (max-width: 415px) {
+  .landing-social-icons-container {
+    top: 75%;
+  }
+}
+
+@media (max-width: 821px) and (min-height: 1180px) {
+  .landing-social-icons-container {
+    top: 75%;
+  }
+}

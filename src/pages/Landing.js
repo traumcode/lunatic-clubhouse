@@ -1,23 +1,27 @@
 import React from 'react';
-
-
+import Video from '../components/Video';
+import Videolanding from "../resources/animation1.mp4"
+import Videolanding2 from "../resources/animation2.mp4"
 
 function Landing(props) {
+    const myVideos = [
+        Videolanding,
+        Videolanding2
+    ]
+
+
     return (
         <div className='container landing-page-container'>
-            <h1>test</h1>
-            <div className='landing-photo-container' style={{height: '550px'}}>
-                <img className='landing-photo' src='https://i.ibb.co/sCMWk0d/logo-transparent-2.png' alt='landing photo'/>
-            </div>
+            <Video videos={myVideos}/>
             <div className='landing-social-icons-container'>
                 <a href='https://discord.gg/ec8Q7U6B' className='landing-icon'>
-                    <i className="fab fa-brands fa-discord "/>
+                    <i className="fab fa-brands fa-discord icon-3d"/>
                 </a>
                 <a href='https://drive.google.com/file/d/1usTlobZxb7GcgYlhVcT38Kgn-vURrNVd/view?usp=sharing' className='landing-icon'>
-                    <i className="fas fa-solid fa-scroll" />
+                    <i className="fas fa-solid fa-scroll icon-3d" />
                 </a>
                 <a href='https://twitter.com/LunatiClub' className='landing-icon'>
-                    <i className="fab fa-brands fa-twitter"/>
+                    <i className="fab fa-brands fa-twitter icon-3d"/>
                 </a>
             </div>
         </div>
