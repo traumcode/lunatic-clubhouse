@@ -2,7 +2,7 @@ import React, {useState, useEffect } from "react";
 import * as video from "react-dom/test-utils";
 
 const Video = (props) => {
-	const [src] = useState(props.videos[2])
+	const [src] = useState(props.videos[3])
 
 	useEffect(() => {
 		let element = document.getElementById('landingVideo')
