@@ -1,17 +1,29 @@
 import React, {useState, useEffect } from "react";
 
 const Video = (props) => {
-	const [src] = useState(props.videos[3])
+	const [src] = useState(props.videos[2])
 
 	useEffect(() => {
 		let element = document.getElementById('landingVideo')
-		element.addEventListener("canplay", function () {
-			setTimeout(function () {
-				element.play()
-				element.currentTime = 10;
-			}, 9900)
-		})
-		element.play()
+		let count = 0
+			element.addEventListener("canplay", function () {
+				if(count === 0) {
+					setTimeout(function () {
+						element.setAttribute('src', props.videos[1])
+						count = 1
+					}, 1900 )
+				}
+				// if(count === 0)
+				// 	setTimeout(function () {
+				// 		element.currentTime = 10;
+				// 		count = 1
+				// 	}, 1900 )
+
+			})
+
+
+
+
 	}, [])
 
 	return (
