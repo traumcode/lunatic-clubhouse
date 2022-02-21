@@ -36,8 +36,8 @@ $blueColor: rgb(249, 118, 253);
 }
 .icon-3d  {
   padding: 10px;
-  -webkit-animation: icon3d 200ms 10;
-  animation: icon3d 200ms 10;
+  -webkit-animation: icon3d 0ms 10;
+  animation: icon3d 0ms 10;
   color: rgba(21, 120, 231, 0.6);
 
   &:hover {
