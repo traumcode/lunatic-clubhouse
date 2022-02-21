@@ -1,22 +1,19 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect } from "react";
 
 const Video = (props) => {
-	const [index, setIndex] = useState(1);
 	const [src, setSrc] = useState(props.videos[1])
-	console.log(src)
 
-	useEffect(() => {
-		let video = document.getElementById('landingVideo');
-		video.play();
-	}, [src])
 
 	return (
-		<div>
-			<video id='landingVideo' autoPlay loop muted className='landing-video'>
-				<source src={src} type='video/mp4' id='landingVideoSource'/>
-				<source src={index === 1 ? props.videos[0] : props.videos[1]} type='video/mp4' id='landingVideoSource'/>
-			</video>
-		</div>
+		<div
+			dangerouslySetInnerHTML={{
+			__html: `
+					<video class="app__backgroundVideo landing-video" autoplay loop muted playsinline>
+      					<source src=${src} type="video/mp4" id='landingVideoSource'/>
+      						Your browser does not support the video tag.
+					</video>`,
+		}}
+		/>
 	);
 };
 
