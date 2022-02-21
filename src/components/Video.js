@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from "react";
 
 const Video = (props) => {
-	const [src] = useState(props.videos[2])
+	const [src] = useState(props.videos[3])
 
 	useEffect(() => {
 		let element = document.getElementById('landingVideo')
@@ -9,7 +9,7 @@ const Video = (props) => {
 			element.addEventListener("canplay", function () {
 				if(count === 0) {
 					setTimeout(function () {
-						element.setAttribute('src', props.videos[1])
+						element.setAttribute('src', props.videos[4])
 						count = 1
 					}, 1900 )
 				}
