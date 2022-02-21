@@ -1,21 +1,13 @@
 import React from 'react';
 import Video from '../components/Video';
-import Videolanding from "../resources/animation1.mp4"
-import Videolanding2 from "../resources/animation2.mp4"
-import Videolanding3 from "../resources/animation3.mp4"
-import Videolanding4 from "../resources/animation4.mp4"
-import Videolanding5 from "../resources/animation2 (1).mp4"
-
-
+import Videolanding from "../resources/animation7.mp4"
+import Videolanding2 from "../resources/animation4.mp4"
 
 
 function Landing(props) {
     const myVideos = [
         Videolanding,
         Videolanding2,
-        Videolanding3,
-        Videolanding4,
-        Videolanding5
     ]
 
 
