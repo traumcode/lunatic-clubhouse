@@ -3,7 +3,7 @@ import Video from '../components/Video';
 import Videolanding from "../resources/animation1.mp4"
 import Videolanding2 from "../resources/animation2.mp4"
 import Videolanding3 from "../resources/animation3.mp4"
-import Videolanding4 from "../resources/animation4.webm"
+import Videolanding4 from "../resources/animation4.mp4"
 
 
 function Landing(props) {

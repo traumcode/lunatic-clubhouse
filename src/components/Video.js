@@ -19,7 +19,7 @@ const Video = (props) => {
 			dangerouslySetInnerHTML={{
 			__html: `
 					<video id="landingVideo" class="app__backgroundVideo landing-video" playsinline autoplay loop muted>
-      					<source src=${src} type="video/webm" id='landingVideoSource'/>
+      					<source src=${src} type="video/mp4" id='landingVideoSource'/>
       						Your browser does not support the video tag.
 					</video>`,
 		}}
