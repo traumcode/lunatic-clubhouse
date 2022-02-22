@@ -6,19 +6,14 @@ const Video = (props) => {
 	const [ videoSrc2 ] = useState(props.videos[1])
 
 	useEffect(() => {
-		let element = document.getElementById("landingVideo")
 		let element2 = document.getElementById("landingVideo2")
-		alert("sd")
 
-		element.addEventListener("loadedmetadata", function () {
-			if (element.buffered.length === 0) {
-				return;
-			}
-			setTimeout(() => {
-				element2.getAttribute('style')
-				element2.setAttribute("style", "display: none")
-			}, 10000)
-		})
+		setTimeout(() => {
+			alert('2')
+			element2.getAttribute('style')
+			element2.setAttribute("style", "display: none")
+		}, 10000)
+
 
 	}, [])
 
