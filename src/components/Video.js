@@ -7,14 +7,16 @@ const Video = (props) => {
 
 	useEffect(() => {
 		let element = document.getElementById("landingVideo")
+		let element2 = document.getElementById("landingVideo2")
+		alert("sd")
+
 		element.addEventListener("loadedmetadata", function () {
 			if (element.buffered.length === 0) {
 				return;
 			}
-
 			setTimeout(() => {
-				document.getElementById("landingVideo2").setAttribute("style", "display: none")
-				console.log("2131")
+				element2.getAttribute('style')
+				element2.setAttribute("style", "display: none")
 			}, 10000)
 		})
 
