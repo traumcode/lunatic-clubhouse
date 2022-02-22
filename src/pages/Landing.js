@@ -1,7 +1,7 @@
 import React from 'react';
 import Video from '../components/Video';
-import Videolanding from "../resources/animation7.mp4"
-import Videolanding2 from "../resources/animation4.mp4"
+import Videolanding from "../resources/animation2.mp4"
+import Videolanding2 from "../resources/animation3.mp4"
 
 
 function Landing(props) {
