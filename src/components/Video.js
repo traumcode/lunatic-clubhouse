@@ -9,12 +9,9 @@ const Video = (props) => {
 		let element2 = document.getElementById("landingVideo2")
 
 		setTimeout(() => {
-			alert('2')
 			element2.getAttribute('style')
 			element2.setAttribute("style", "display: none")
 		}, 10000)
-
-
 	}, [])
 
 	return (
