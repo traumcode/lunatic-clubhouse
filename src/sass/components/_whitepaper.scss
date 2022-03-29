@@ -19,4 +19,14 @@
     max-width: 96vw!important;
     height: auto!important;
   }
+  .react-pdf__Page__textContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* width: 595.5px; */
+    height: 842.25px;
+    color: transparent;
+    transform: translate(-50%, -50%) rotate(0deg);
+    pointer-events: none;
+  }
 }
