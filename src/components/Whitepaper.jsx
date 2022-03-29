@@ -31,10 +31,11 @@ export default function Whitepaper(props) {
                 file={pdf}
                 options={{ workerSrc: "/pdf.worker.js"}}
                 onLoadSuccess={documentSuccess}
+                className='document-pdf'
             >
                 <Page pageNumber={pageNumber}/>
             </Document>
-            <div>
+            <div className='document-pages'>
                 <p>
                     Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
                 </p>
