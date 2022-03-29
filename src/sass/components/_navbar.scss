@@ -3,13 +3,9 @@ nav {
   justify-content: center;
   align-items: center;
   position: absolute;
-  border-bottom: 1px solid #27f1f4;
-  border-top: 1px solid #27f1f4;
   background-color: transparent;
-  height: 80px;
   width: 100%;
   z-index: 1;
-
   .brand-container {
     .toggle-container {
       display: none;
@@ -92,7 +88,6 @@ nav {
 @media screen and (min-width: 280px) and (max-width: 760px) {
   nav {
     position: relative;
-    padding: 1rem 2rem;
     .brand-container {
       display: flex;
       justify-content: space-between;
