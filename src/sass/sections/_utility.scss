@@ -67,9 +67,16 @@
       width: 25vw;
       height: 25vw;
     }
+    .tooltip2-title {
+      position: absolute;
+      top: 9vw;
+      color: aqua;
+      font-size: 1.1vw;
+      padding: 0.5vw;
+    }
     .tooltip2-description {
       position: absolute;
-      top: 10vw;
+      top: 12.5vw;
       color: aqua;
       font-size: 1vw;
       font-family: "Open Sans", serif;

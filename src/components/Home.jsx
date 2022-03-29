@@ -1,5 +1,5 @@
 import React from "react";
-import Video1 from '../assets/intro_video.mp4'
+import Video1 from '../assets/intro_video.mp4';
 
 export default function Home() {
     return (
@@ -10,9 +10,11 @@ export default function Home() {
                 </video>
             </div>
             <div className='button-container'>
-                <button className='button-64' role='button'>
-                    <span className="text">Getting Started</span>
-                </button>
+                <a href="https://docs.terra.money/docs/learn/terra-station/wallet.html" style={{textDecoration: 'none'}}>
+                    <button className='button-64' role='button'>
+                        <span className="text">Getting Started</span>
+                    </button>
+                </a>
                 <button className='button-64' role='button'>
                     <span className="text">Whitepaper</span>
                 </button>

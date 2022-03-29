@@ -5,6 +5,9 @@ import Photo2 from "../assets/teamNFTs/nft2.png"
 import Photo3 from "../assets/teamNFTs/nft3.png"
 import Photo4 from "../assets/teamNFTs/nft4.png"
 import Photo5 from "../assets/teamNFTs/nft5.png"
+import Photo6 from "../assets/teamNFTs/nft6.png"
+import Photo7 from "../assets/teamNFTs/nft7.png"
+import Photo8 from "../assets/teamNFTs/nft8.png"
 
 export default function TeamForce(props) {
     return (
@@ -36,12 +39,12 @@ export default function TeamForce(props) {
                     <p className='team-force-name'>UI/UX Design & Video Editor</p>
                 </div>
                 <div className='team-force-member-container'>
-                    <img src={TeamFrame} alt='photo' className='team-photo'/>
+                    <img src={Photo5} alt='photo' className='team-photo'/>
                     <h5 className='team-force-name'>Greenbasilik</h5>
                     <p className='team-force-name'>Lead Designer & Stage Director</p>
                 </div>
                 <div className='team-force-member-container'>
-                    <img src={TeamFrame} alt='photo' className='team-photo'/>
+                    <img src={Photo6} alt='photo' className='team-photo'/>
                     <h5 className='team-force-name'>haxydraws</h5>
                     <p className='team-force-name'>Content Designer</p>
                 </div>
@@ -53,12 +56,12 @@ export default function TeamForce(props) {
                     <p className='team-force-name'>Community Manager</p>
                 </div>
                 <div className='team-force-member-container'>
-                    <img src={TeamFrame} alt='photo' className='team-photo'/>
+                    <img src={Photo7} alt='photo' className='team-photo'/>
                     <h5 className='team-force-name'>The_artitect98</h5>
                     <p className='team-force-name'>System Designer</p>
                 </div>
                 <div className='team-force-member-container'>
-                    <img src={TeamFrame} alt='photo' className='team-photo'/>
+                    <img src={Photo8} alt='photo' className='team-photo'/>
                     <h5 className='team-force-name'>Rian Cult</h5>
                     <p className='team-force-name'>Music Producer</p>
                 </div>
