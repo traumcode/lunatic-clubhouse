@@ -89,14 +89,16 @@ nav {
   nav {
     position: relative;
     .brand-container {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      align-items: center;
-      background: #6473e7;
-      height: 100%;
       align-content: center;
+      align-items: center;
+      background: #32dff282;
+      display: flex;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      justify-content: space-between;
       padding: 6vw;
+      width: 100%;
       .brand {
         img {
           height: 1.5rem;
