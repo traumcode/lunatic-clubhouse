@@ -47,7 +47,7 @@ export default function Navbar(props) {
                         <a href="#vote">VOTE</a>
                     </li>
                     <li>
-                        <a href="#signup" style={{width: '170%', color: 'aqua'}}>CONNECT WALLET</a>
+                        <a href="#signup" style={{width: '170%', color: 'aqua', textAlign: 'center'}}>CONNECT WALLET</a>
                     </li>
                     <li className='twitter-icon'>
                         <FaTwitter/>
