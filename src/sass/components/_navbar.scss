@@ -87,14 +87,14 @@ nav {
 
 @media screen and (min-width: 280px) and (max-width: 760px) {
   nav {
-    position: relative;
+    position: absolute;
+    height: 5vh;
     .brand-container {
       align-content: center;
       align-items: center;
-      background: #32dff282;
+      background: #55065e61;
       display: flex;
       height: 100%;
-      position: absolute;
       top: 0;
       justify-content: space-between;
       padding: 6vw;
