@@ -1,0 +1,49 @@
+.our-story {
+  display: flex;
+  height: 80vw;
+  align-items: center;
+  flex-direction: column;
+  .our-story-title {
+    position: absolute;
+    font-size: 3vw;
+    padding-top: 4vw;
+    color: aqua;
+    z-index: 3;
+  }
+  .our-story-photo {
+    min-width: 100vw;
+    min-height: 75vw;
+    /* height: 111vw; */
+    /* object-fit: cover; */
+  }
+
+  .our-story-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+    .our-story-frame {
+      position: absolute;
+      z-index: 3;
+      left: 10vw;
+      top: 27vw;
+      width: 56vw;
+      height: 32vw;
+    }
+    .our-story-text {
+      position: absolute;
+      color: white;
+      left: 13vw;
+      top: 31vw;
+      height: 24vw;
+      width: 50vw;
+      z-index: 6;
+      text-align: center;
+      line-height: 1.7;
+      font-size: 1.2vw;
+      overflow: auto;
+      transform: rotateY(345deg) translateZ(0px);
+      padding: 1vw;
+      transform: rotateX(345deg) translateZ(0px);
+    }
+  }
+}

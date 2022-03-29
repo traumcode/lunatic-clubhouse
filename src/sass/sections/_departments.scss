@@ -1,0 +1,61 @@
+.departments {
+  margin: 0;
+  background-image: url("../../assets/start_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-bottom: 1px solid aqua;
+
+  .departments-title {
+    font-size: 3vw;
+    padding-top: 4vw;
+    color: aqua;
+    margin-bottom: 10vw;
+  }
+
+  .accordion-item {
+    width: 80vw;
+    margin-left: 10vw;
+  }
+  .accordion-flush .accordion-item {
+    background-color: transparent;
+  }
+  .accordion-flush .accordion-item .accordion-button {
+    background-image: url("../../assets/svgs/departments_tooltip.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    padding: 1vw;
+  }
+  .accordion-button{
+    color: #0c8d9a;
+    text-align: center;
+  }
+  .accordion-button:not(.collapsed) {
+    color: aqua;
+    display: none;
+  }
+  .accordion-title {
+    text-align: center;
+    width: 100%;
+    font-size: 3vw;
+    font-family: Audiowide, serif;
+  }
+  .accordion-body {
+    background-image: url("../../assets/svgs/departments_tooltip-1.svg");
+    background-size: 79vw 20vw;
+    background-repeat: no-repeat;
+    font-family: "Open Sans", serif;
+    font-size: 1.5vw;
+    color: aqua;
+    margin-bottom: 10px;
+    display: flex;
+    height: 20vw;
+    align-items: center;
+    flex-direction: column;
+  }
+}

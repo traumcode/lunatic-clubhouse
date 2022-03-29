@@ -1,0 +1,31 @@
+.join-us {
+  margin: 0;
+  background-image: url("../../assets/join_background.png");
+  background-size: cover;
+  height: 58vw;
+  background-repeat: no-repeat;
+  text-align: center;
+  border-top: 1px solid aqua;
+  border-bottom: 1px solid aqua;
+  .join-us-title{
+    font-size: 3vw;
+    padding-top: 3vw;
+    color: aqua;
+    margin-bottom: 10vw;
+  }
+  .join-us-text {
+    background: #2b1757c7;
+    color: cyan;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 40vw;
+    left: 10vw;
+    border-radius: 5px;
+    padding: 2vw;
+    border: 1px solid #00ffff8c;
+    &:hover {
+      background: rgba(43, 23, 87, 0.91);
+      cursor: pointer;
+    }
+  }
+}

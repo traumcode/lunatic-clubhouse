@@ -1,0 +1,33 @@
+.team-force {
+  margin: 0;
+  background-image: url("../../assets/start_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 130vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-bottom: 1px solid aqua;
+  border-top: 1px solid aqua;
+
+  .team-force-title {
+    font-size: 3vw;
+    padding-top: 3vw;
+    color: aqua;
+    margin-bottom: 10vw;
+  }
+
+  .team-force-container {
+    display: grid;
+    gap: 3vw;
+    grid-template-columns: 3fr 3fr 3fr;
+    color: white;
+    .team-force-name {
+      font-size: 2vw;
+    }
+    .team-photo{
+      width: 18vw;
+    }
+  }
+}

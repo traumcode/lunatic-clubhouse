@@ -1,0 +1,161 @@
+.utility {
+  margin: 0;
+  background-image: url("../../assets/svgs/utility_background.svg");
+  background-size: cover;
+  height: 56vw;
+  text-align: center;
+  border-top: 1px solid aqua;
+  border-bottom: 1px solid aqua;
+  .utility-item {
+    position: absolute;
+    top: 12vw;
+    left: 31vw;
+    width: 43vw;
+    height: 43vw;
+  }
+  .utility-title {
+    font-size: 3vw;
+    padding-top: 4vw;
+    color: aqua;
+  }
+  .utility-tooltip1 {
+    position: absolute;
+    top: 9vw;
+    left: 72vw;
+    .tootltip1_1 {
+      position: absolute;
+      top: -2vw;
+      left: -10vw;
+      height: 8vw;
+      width: 8vw;
+    }
+    .tootltip1 {
+      position: relative;
+      height: 18vw;
+      width: 20vw;
+    }
+    .tooltip1-title {
+      position: absolute;
+      top: 4vw;
+      color: aqua;
+      font-size: 1.2vw;
+    }
+    .tooltip1-description {
+      position: absolute;
+      top: 7vw;
+      color: aqua;
+      font-size: 1vw;
+      font-family: "Open Sans", serif;
+      font-weight: 300;
+      line-height: 1.2;
+      padding: 5px;
+    }
+  }
+  .utility-tooltip2 {
+    position: absolute;
+    top: 10vw;
+    left: 10vw;
+    .tootltip2_2{
+      position: absolute;
+      top: 3vw;
+      left: 24vw;
+      height: 8vw;
+      width: 8vw;
+    }
+    .tootltip2 {
+      position: relative;
+      width: 25vw;
+      height: 25vw;
+    }
+    .tooltip2-description {
+      position: absolute;
+      top: 10vw;
+      color: aqua;
+      font-size: 1vw;
+      font-family: "Open Sans", serif;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+  }
+  .utility-tooltip3 {
+    position: absolute;
+    top: 26vw;
+    left: 62vw;
+    .tootltip3_3 {
+      position: absolute;
+      top: 3vw;
+      left: -5vw;
+      height: 8vw;
+      width: 8vw;
+    }
+    .tootltip3 {
+      position: relative;
+      width: 25vw;
+      height: 25vw;
+    }
+    .tooltip3-description {
+      position: absolute;
+      top: 11vw;
+      color: aqua;
+      font-size: 1vw;
+      font-family: "Open Sans", serif;
+      font-weight: 300;
+      line-height: 1.2;
+      padding: 1vw 1vw 1vw 2vw;
+    }
+  }
+  .utility-tooltip4 {
+    position: absolute;
+    top: 32vw;
+    left: 22vw;
+    .tootltip4_4 {
+      position: absolute;
+      top: 1vw;
+      left: 18vw;
+      height: 8vw;
+      width: 8vw;
+    }
+    .tootltip4 {
+      position: relative;
+      height: 18vw;
+      width: 20vw;
+    }
+    .tooltip4-description {
+      position: absolute;
+      top: 7vw;
+      color: aqua;
+      font-size: 1vw;
+      font-family: "Open Sans", serif;
+      font-weight: 300;
+      line-height: 1.2;
+      padding: 1vw;
+    }
+  }
+  .utility-tooltip5 {
+    position: absolute;
+    top: 45vw;
+    left: 45vw;
+    .tootltip5_5 {
+      position: absolute;
+      top: -1vw;
+      left: 5vw;
+      height: 8vw;
+      width: 8vw;
+    }
+    .tootltip5 {
+      position: relative;
+      height: 18vw;
+      width: 20vw;
+    }
+    .tooltip5-description {
+      position: absolute;
+      top: 7vw;
+      color: aqua;
+      font-size: 1vw;
+      font-family: "Open Sans", serif;
+      font-weight: 300;
+      line-height: 1.2;
+      padding: 1vw;
+    }
+  }
+}
