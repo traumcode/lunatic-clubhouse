@@ -1,5 +1,7 @@
 import React from "react";
 import Video1 from '../assets/intro_video.mp4';
+import {Link} from 'react-router-dom';
+
 
 export default function Home() {
     return (
@@ -10,14 +12,17 @@ export default function Home() {
                 </video>
             </div>
             <div className='button-container'>
-                <a href="https://docs.terra.money/docs/learn/terra-station/wallet.html" style={{textDecoration: 'none'}}>
+                <a href="https://docs.terra.money/docs/learn/terra-station/wallet.html"
+                   style={{textDecoration: 'none'}}>
                     <button className='button-64' role='button'>
                         <span className="text">Getting Started</span>
                     </button>
                 </a>
-                <button className='button-64' role='button'>
-                    <span className="text">Whitepaper</span>
-                </button>
+                <Link to='/white' style={{textDecoration: 'none'}}>
+                    <button className='button-64' role='button'>
+                        <span className="text">Whitepaper</span>
+                    </button>
+                </Link>
             </div>
         </div>
     );
