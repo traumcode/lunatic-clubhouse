@@ -53,7 +53,7 @@ h2 {
 .app-container {
   background-color: var(--background);
   font-family: var(--font-family);
-  overflow-x: hidden;
+  overflow: hidden;
   transition: 0.5s ease-in-out;
   @media screen and (min-width: 280px) and (max-width: 1080px) {
     padding: 0;
