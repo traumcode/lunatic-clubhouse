@@ -19,14 +19,6 @@
   --font-family: "Audiowide", sans-serif;
 }
 
-[data-theme="light"] {
-  --background: #ffffff;
-  --accent-color1: #000000;
-  --accent-color2: #eeeeee;
-  --accent-color3: #777777;
-  --card-color: #eeeeee;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -35,6 +27,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h2 {
