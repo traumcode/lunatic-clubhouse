@@ -1,35 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-
-.releases {
-  background-image: url("../../assets/start_background.png");
+.about {
+  background: url(http://localhost:3000/static/media/about_background.84b5c37810c20812d97e.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 60vw;
+  background-position: center center;
   border-top: 1px solid aqua;
-  border-bottom: 1px solid aqua;
-  div.about-frame {
-    margin: 0;
-    position: relative;
-    width: 70vw;
-    left: 15%;
-    div.about-text {
-      position: absolute;
-      top: 15vw;
-      left: 10vw;
-      padding: 2vw;
-      right: 10vw;
-      text-align: center;
-      color: #191f38;
-      .about-title {
-        font-size: 1.9vw;
-        text-align: center;
-      }
-      .about-description {
-        font-family: "Open Sans", serif;
-        font-weight: 300;
-        font-size: 1.6vw;
-        line-height: 1.2;
-      }
-    }
+  background-repeat: no-repeat;
+  height: 56vw;
+  width: 100vw;
+  position: relative;
+  min-height: 10em;
+  .about-text {
+    display: flex;
+    font-size: clamp(6px, 2vw,31px);
+    position: absolute;
+    top: 13vw;
+    left: 35vw;
+    width: 50vw;
+    text-align: center;
   }
 }

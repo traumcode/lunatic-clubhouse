@@ -2,7 +2,6 @@ import React, {useEffect, useRef} from "react";
 import Navbar from "../components/Navbar";
 import Home from "../components/Home";
 import About from "../components/About";
-import CrewCollection from "../components/CrewCollection";
 import Utility from "../components/Utility";
 import Departments from "../components/Departments";
 import OurStory from "../components/OurStory";
@@ -27,7 +26,7 @@ export default function OnePageApp(props) {
                 reset: false,
             });
             sr.reveal(
-                `nav,.home,.releases,.crew-collection,.utility,.departments,.our-story,.road-map,.team-force,.vote,.join-us,.footer`,
+                `nav,.home,.releases,.utility,.departments,.our-story,.road-map,.team-force,.vote,.join-us,.footer`,
                 {
                     interval: 100,
                 }
@@ -52,7 +51,6 @@ export default function OnePageApp(props) {
             <Navbar/>
             <Home/>
             <About/>
-            <CrewCollection/>
             <Utility/>
             <Departments/>
             <OurStory/>

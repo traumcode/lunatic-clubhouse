@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
-import { Document, Page, pdfjs } from "react-pdf";
+import {Document, Page, pdfjs} from "react-pdf";
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default function Whitepaper(props) {
-    const [ numPages, setNumPages ] = useState(null);
-    const [ pageNumber, setPageNumber ] = useState(1);
+    const [numPages, setNumPages] = useState(null);
+    const [pageNumber, setPageNumber] = useState(1);
 
-    function documentSuccess({ numPages }) {
+    function documentSuccess({numPages}) {
         setNumPages(numPages);
         setPageNumber(1);
     }
@@ -23,33 +24,34 @@ export default function Whitepaper(props) {
         changePage(1);
     }
 
-    const { pdf } = props;
+    const {pdf} = props;
 
     return (
         <div className='whitepaper'>
-            <Document
-                file={pdf}
-                options={{ workerSrc: "/pdf.worker.js"}}
-                onLoadSuccess={documentSuccess}
-                className='document-pdf'
-            >
-                <Page pageNumber={pageNumber}/>
-            </Document>
-            <div className='document-pages'>
-                <p>
-                    Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
-                </p>
-                <button type="button" disabled={pageNumber <= 1} onClick={previousPage}>
-                    Previous
-                </button>
-                <button
-                    type="button"
-                    disabled={pageNumber >= numPages}
-                    onClick={nextPage}
+                <Document
+                    file={pdf}
+                    options={{workerSrc: "/pdf.worker.js"}}
+                    onLoadSuccess={documentSuccess}
+                    className='document-pdf'
                 >
-                    Next
-                </button>
-            </div>
+                    <Page pageNumber={pageNumber}/>
+                </Document>
+                <div className='document-pages'>
+                    <p>
+                        Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
+                    </p>
+                    <button type="button" disabled={pageNumber <= 1} onClick={previousPage}>
+                        Previous
+                    </button>
+                    <button
+                        type="button"
+                        disabled={pageNumber >= numPages}
+                        onClick={nextPage}
+                    >
+                        Next
+                    </button>
+                </div>
+
         </div>
     );
 }

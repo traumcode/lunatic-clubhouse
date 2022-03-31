@@ -1,13 +1,18 @@
 .whitepaper {
   display: flex;
   justify-content: center;
-  background-image: url('../../assets/start_background.png');
-  align-items: center;
-  flex-direction: column;
+  background-image: url(http://localhost:3000/static/media/start_background.850bc650664e1913b5e2.png);
+  /* align-items: center; */
+  /* flex-direction: column; */
+  background-position: center center;
   height: 100vh;
-  .document-pdf {
-    position: absolute;
-    top: 3vw;
+  }
+  .grid-white {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    /* width: 100%; */
+    /* height: 100%; */
+    justify-items: center;
   }
   .document-pages {
     position: absolute;
@@ -17,17 +22,18 @@
     display: block;
     -webkit-user-select: none;
     -ms-user-select: none;
-    height: 90vh!important;
+    height: 100vw!important;
+    width: auto!important;
     user-select: none;
+    max-height: 846px;
   }
   .react-pdf__Page__textContent {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 0!important;
-    height: 842.25px;
+    width: auto;
+    /* height: 842.25px; */
     color: transparent;
     transform: translate(-50%, -50%) rotate(0deg);
     pointer-events: none;
   }
-}
