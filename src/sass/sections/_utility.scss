@@ -86,19 +86,26 @@
   }
   .utility-tooltip3 {
     position: absolute;
-    top: 26vw;
-    left: 62vw;
+    top: 23vw;
+    left: 64vw;
     .tootltip3_3 {
       position: absolute;
       top: 3vw;
-      left: -5vw;
+      left: -8vw;
       height: 8vw;
       width: 8vw;
     }
     .tootltip3 {
       position: relative;
-      width: 25vw;
+      width: 22vw;
       height: 25vw;
+    }
+    .tooltip3-title{
+      position: absolute;
+      top: 7vw;
+      color: aqua;
+      font-size: 1.1vw;
+      padding: 0.5vw;
     }
     .tooltip3-description {
       position: absolute;
@@ -114,11 +121,11 @@
   .utility-tooltip4 {
     position: absolute;
     top: 32vw;
-    left: 22vw;
+    left: 17vw;
     .tootltip4_4 {
       position: absolute;
       top: 1vw;
-      left: 18vw;
+      left: 21vw;
       height: 8vw;
       width: 8vw;
     }
@@ -126,6 +133,13 @@
       position: relative;
       height: 18vw;
       width: 20vw;
+    }
+   .tooltip4-title {
+      position: absolute;
+      top: 4vw;
+      color: aqua;
+      font-size: 1.1vw;
+      padding: 0.5vw;
     }
     .tooltip4-description {
       position: absolute;
@@ -140,11 +154,11 @@
   }
   .utility-tooltip5 {
     position: absolute;
-    top: 45vw;
-    left: 45vw;
+    top: 40vw;
+    left: 44vw;
     .tootltip5_5 {
       position: absolute;
-      top: -1vw;
+      top: -5vw;
       left: 5vw;
       height: 8vw;
       width: 8vw;
@@ -152,7 +166,14 @@
     .tootltip5 {
       position: relative;
       height: 18vw;
-      width: 20vw;
+      width: 17vw;
+    }
+    .tooltip5-title {
+      position: absolute;
+      top: 4vw;
+      color: aqua;
+      font-size: 1.1vw;
+      padding: 0.5vw;
     }
     .tooltip5-description {
       position: absolute;
@@ -166,3 +187,4 @@
     }
   }
 }
+

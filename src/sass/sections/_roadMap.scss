@@ -3,7 +3,7 @@
   background-image: url("../../assets/start_background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 120vw;
+  height: 50vw;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,6 @@
         position: absolute;
         font-size: 3vw;
         color: white;
-        top: 29vw;
       }
     }
     .road-map-text {
@@ -45,4 +44,8 @@
       font-size: 1.7vw;
     }
   }
+}
+
+@media screen and (max-width: 1080px) {
+
 }

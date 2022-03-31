@@ -3,11 +3,11 @@ import {ReactComponent as Tooltip1} from "../assets/svgs/utility_tooltip1.svg";
 import {ReactComponent as Tooltip1_1} from "../assets/svgs/utility_tooltip_1_1.svg";
 import {ReactComponent as Tooltip2} from "../assets/svgs/utility_tooltip2.svg";
 import {ReactComponent as Tooltip2_2} from "../assets/svgs/utility_tooltip_2_2.svg";
-import {ReactComponent as Tooltip3} from "../assets/svgs/utility_tooltip3.svg";
+import {ReactComponent as Tooltip3} from "../assets/svgs/utilitynou.svg";
 import {ReactComponent as Tooltip3_3} from "../assets/svgs/utility_tooltip_3_3.svg";
-import {ReactComponent as Tooltip4} from "../assets/svgs/utility_tooltip4.svg";
+import {ReactComponent as Tooltip4} from "../assets/svgs/utilitynou.svg";
 import {ReactComponent as Tooltip4_4} from "../assets/svgs/utility_tooltip_4_4.svg";
-import {ReactComponent as Tooltip5} from "../assets/svgs/utility_tooltip5.svg";
+import {ReactComponent as Tooltip5} from "../assets/svgs/utilitynou.svg";
 import {ReactComponent as Tooltip5_5} from "../assets/svgs/utility_tooltip_5_5.svg";
 import {ReactComponent as UtilityItem} from "../assets/svgs/utility_item.svg";
 
@@ -32,17 +32,20 @@ export default function Utility(props) {
             <div className='utility-tooltip3'>
                 <Tooltip3_3 className='tootltip3_3'/>
                 <Tooltip3 className='tootltip3'/>
-                <p className='tooltip3-description'>The increased offering of the NFT value.</p>
+                <h1 className='tooltip3-title'>The increased offering of the NFT value.</h1>
+                <p className='tooltip3-description'>With our challenges, we are looking to increase the value of other Terra NFT projects which will automatically create a bond between the Terraverse and The Crew members.</p>
             </div>
             <div className='utility-tooltip4'>
                 <Tooltip4_4 className='tootltip4_4'/>
                 <Tooltip4 className='tootltip4'/>
-                <p className='tooltip4-description'>Treasury and capital management.</p>
+                <h1 className='tooltip4-title'>Treasury and capital management.</h1>
+                <p className='tooltip4-description'>  The crew NFT holder will be able to choose in which direction the treasury and capital are going to be distributed. </p>
             </div>
             <div className='utility-tooltip5'>
                 <Tooltip5_5 className='tootltip5_5'/>
                 <Tooltip5 className='tootltip5'/>
-                <p className='tooltip5-description'>Airdrop eligibility for future projects.</p>
+                <h1 className='tooltip5-title'>Airdrop eligibility for future projects.</h1>
+                <p className='tooltip5-description'>To be added.</p>
             </div>
         </div>
     );

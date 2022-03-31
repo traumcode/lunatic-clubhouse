@@ -5,7 +5,6 @@ export default function About() {
 
     return (
         <div className="releases" id='about'>
-            <div className="release">
                 <div className='about-frame'>
                     <AboutFrame />
                     <div className='about-text'>
@@ -15,7 +14,6 @@ export default function About() {
                         can spend time together in a challenging environment. The ultimate goal is to add as much value as possible to the terra-ecosystem
                         and to make use of the incredible utility of UST</p>
                     </div>
-                </div>
             </div>
 
         </div>

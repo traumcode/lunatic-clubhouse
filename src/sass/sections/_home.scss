@@ -1,6 +1,15 @@
 .home {
   background: url("../../assets/casino.jpeg");
   background-size: cover;
+  .video-wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .button-container {
     position: absolute;
     top: 0;
@@ -21,14 +30,5 @@
     height: 100%;
     width: 100%;
   }
-  .video-wrapper {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
 
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
