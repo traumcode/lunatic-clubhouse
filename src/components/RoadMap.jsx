@@ -90,13 +90,13 @@ export default function RoadMap(props) {
                 </div>
                 <div className='circle-container'>
                     <h2 className='circle-number'>Q3</h2>
-                    <OverlayTrigger trigger="click" placement="left" overlay={popover3}>
+                    <OverlayTrigger trigger="click" placement="auto" overlay={popover3}>
                         <Circle2 className='circle-svg'/>
                     </OverlayTrigger>
                 </div>
                 <div className='circle-container'>
                     <h2 className='circle-number'>Q4</h2>
-                    <OverlayTrigger trigger="click" placement="left" overlay={popover4}>
+                    <OverlayTrigger trigger="click" placement="auto" overlay={popover4}>
                         <Circle2 className='circle-svg'/>
                     </OverlayTrigger>
                 </div>
