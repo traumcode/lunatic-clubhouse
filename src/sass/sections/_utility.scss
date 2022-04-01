@@ -1,190 +1,548 @@
 .utility {
-  margin: 0;
   background-image: url("../../assets/svgs/utility_background.svg");
-  background-size: cover;
-  height: 56vw;
+   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   text-align: center;
-  border-top: 1px solid aqua;
-  border-bottom: 1px solid aqua;
-  .utility-item {
-    position: absolute;
-    top: 12vw;
-    left: 31vw;
-    width: 43vw;
-    height: 43vw;
-  }
-  .utility-title {
-    font-size: 3vw;
-    padding-top: 4vw;
-    color: aqua;
-  }
+  width: 100%;
+  max-height: 105rem;
+  min-height: 100%;
+  overflow: hidden;
+
   .utility-tooltip1 {
-    position: absolute;
-    top: 9vw;
-    left: 72vw;
+    position: relative;
+    top: 34rem;
+    left: 19vw;
+    width: 420px;
+    align-items: flex-end;
+
     .tootltip1_1 {
       position: absolute;
-      top: -2vw;
-      left: -10vw;
-      height: 8vw;
-      width: 8vw;
+      right: -5em;
+      z-index: 1;
     }
+
     .tootltip1 {
-      position: relative;
-      height: 18vw;
-      width: 20vw;
+      /* position: absolute; */
     }
+
     .tooltip1-title {
-      position: absolute;
-      top: 4vw;
+      top: 2rem;
       color: aqua;
-      font-size: 1.2vw;
+      font-size: 1.4rem;
+      width: 90%;
+      position: absolute;
     }
+
     .tooltip1-description {
       position: absolute;
-      top: 7vw;
-      color: aqua;
-      font-size: 1vw;
-      font-family: "Open Sans", serif;
-      font-weight: 300;
-      line-height: 1.2;
-      padding: 5px;
+      color: white;
+      top: 9rem;
+      padding: 0.5rem;
+
     }
   }
+
   .utility-tooltip2 {
-    position: absolute;
-    top: 10vw;
-    left: 10vw;
-    .tootltip2_2{
+    position: relative;
+    top: 14rem;
+    left: 65vw;
+    width: 420px;
+    align-items: flex-end;
+
+    .tootltip2_2 {
       position: absolute;
-      top: 3vw;
-      left: 24vw;
-      height: 8vw;
-      width: 8vw;
+      right: 23em;
+      z-index: 1;
+      top: -4rem;
     }
+
     .tootltip2 {
-      position: relative;
-      width: 25vw;
-      height: 25vw;
+      /* position: absolute; */
     }
+
     .tooltip2-title {
-      position: absolute;
-      top: 9vw;
+      top: 2rem;
       color: aqua;
-      font-size: 1.1vw;
-      padding: 0.5vw;
+      left: 2rem;
+      font-size: 1.4rem;
+      width: 86%;
+      position: absolute;
     }
+
     .tooltip2-description {
       position: absolute;
-      top: 12.5vw;
-      color: aqua;
-      font-size: 1vw;
-      font-family: "Open Sans", serif;
-      font-weight: 300;
-      line-height: 1.2;
+      color: white;
+      top: 9rem;
+      padding: 0.5rem;
+
     }
   }
+
   .utility-tooltip3 {
-    position: absolute;
-    top: 23vw;
+    position: relative;
+    top: 20rem;
     left: 64vw;
+    width: 420px;
+
     .tootltip3_3 {
       position: absolute;
-      top: 3vw;
-      left: -8vw;
-      height: 8vw;
-      width: 8vw;
+      right: 23em;
+      z-index: 1;
+      top: -4rem;
     }
+
     .tootltip3 {
-      position: relative;
-      width: 22vw;
-      height: 25vw;
+      /* position: absolute; */
     }
-    .tooltip3-title{
-      position: absolute;
-      top: 7vw;
+
+    .tooltip3-title {
+      top: 2rem;
       color: aqua;
-      font-size: 1.1vw;
-      padding: 0.5vw;
+      left: 2rem;
+      font-size: 1.4rem;
+      width: 86%;
+      position: absolute;
     }
+
     .tooltip3-description {
       position: absolute;
-      top: 11vw;
-      color: aqua;
-      font-size: 1vw;
-      font-family: "Open Sans", serif;
-      font-weight: 300;
-      line-height: 1.2;
-      padding: 1vw 1vw 1vw 2vw;
+      color: white;
+      top: 9rem;
+      padding: 0.5rem;
+
     }
   }
+
   .utility-tooltip4 {
-    position: absolute;
-    top: 32vw;
-    left: 17vw;
+    position: relative;
+    top: -1rem;
+    left: 22vw;
+    width: 420px;
+    align-items: flex-end;
+
     .tootltip4_4 {
       position: absolute;
-      top: 1vw;
-      left: 21vw;
-      height: 8vw;
-      width: 8vw;
+      right: -5em;
+      z-index: 1;
     }
+
     .tootltip4 {
-      position: relative;
-      height: 18vw;
-      width: 20vw;
+      /* position: absolute; */
     }
-   .tooltip4-title {
-      position: absolute;
-      top: 4vw;
+
+    .tooltip4-title {
+      top: 2rem;
       color: aqua;
-      font-size: 1.1vw;
-      padding: 0.5vw;
+      font-size: 1.4rem;
+      width: 90%;
+      position: absolute;
     }
+
     .tooltip4-description {
       position: absolute;
-      top: 7vw;
-      color: aqua;
-      font-size: 1vw;
-      font-family: "Open Sans", serif;
-      font-weight: 300;
-      line-height: 1.2;
-      padding: 1vw;
+      color: white;
+      top: 9rem;
+      padding: 0.5rem;
     }
   }
+
   .utility-tooltip5 {
-    position: absolute;
-    top: 40vw;
-    left: 44vw;
+    position: relative;
+    top: 2rem;
+    left: 41vw;
+    width: 420px;
+    align-items: flex-end;
+
     .tootltip5_5 {
       position: absolute;
-      top: -5vw;
-      left: 5vw;
-      height: 8vw;
-      width: 8vw;
+      right: 7em;
+      z-index: 1;
+      top: -6rem;
     }
+
     .tootltip5 {
-      position: relative;
-      height: 18vw;
-      width: 17vw;
+      /* position: absolute; */
     }
+
     .tooltip5-title {
-      position: absolute;
-      top: 4vw;
+      top: 2rem;
       color: aqua;
-      font-size: 1.1vw;
-      padding: 0.5vw;
+      font-size: 1.4rem;
+      width: 90%;
+      position: absolute;
     }
+
     .tooltip5-description {
       position: absolute;
-      top: 7vw;
-      color: aqua;
-      font-size: 1vw;
-      font-family: "Open Sans", serif;
-      font-weight: 300;
-      line-height: 1.2;
-      padding: 1vw;
+      color: white;
+      top: 9rem;
+      padding: 1rem;
     }
   }
 }
 
+.utility:after {
+  content: "";
+  display: block;
+  padding-bottom: 56%;
+}
+
+@media (min-width: 1130px) and (max-width: 1350px) {
+  .utility .utility-tooltip1 {
+    position: relative;
+    top: 17rem;
+    left: 19vw;
+    width: 420px;
+    align-items: flex-end;
+  }
+  .utility .utility-tooltip2 {
+    position: relative;
+    top: 16rem;
+    left: 61vw;
+    width: 420px;
+    align-items: flex-end;
+   }
+  .utility .utility-tooltip3 {
+    position: relative;
+    top: 16rem;
+    left: 60vw;
+    width: 420px;
+    }
+  .utility .utility-tooltip4 {
+       position: relative;
+       top: -22rem;
+       left: 13vw;
+       width: 420px;
+       align-items: flex-end;
+     }.utility .utility-tooltip5 {
+          position: relative;
+          left: 22vw;
+          top: -13rem;
+          width: 420px;
+          align-items: flex-end;
+      }
+  .utility .utility-tooltip5 .tootltip5_5 {
+         position: absolute;
+         right: -1em;
+         z-index: 1;
+         top: -6rem;
+       }
+}
+@media (min-width: 650px) and (max-width: 1130px) {
+  .utility {
+    max-height: 121rem;
+  }
+  .utility .utility-tooltip1 {
+    position: relative;
+    top: 17rem;
+    left: 19vw;
+    width: 420px;
+    align-items: flex-end;
+  }
+  .utility .utility-tooltip2 {
+    position: relative;
+    top: 18rem;
+    left: 30vw;
+    width: 420px;
+    align-items: flex-end;
+  }
+  .utility .utility-tooltip3 {
+    position: relative;
+    top: 18rem;
+    left: 27vw;
+    width: 420px;
+  }
+  .utility .utility-tooltip4 {
+    position: relative;
+    top: 18rem;
+    left: 26vw;
+    width: 420px;
+    align-items: flex-end;
+
+  }
+  .utility .utility-tooltip5 {
+    position: relative;
+    left: 25vw;
+    top: 18rem;
+    width: 420px;
+    align-items: flex-end;
+   }
+  .utility .utility-tooltip5 .tootltip5_5 {
+    position: absolute;
+    right: -1em;
+    z-index: 1;
+    top: -6rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 650px) {
+  .utility {
+    max-height: 121rem;
+  }
+  .utility .utility-tooltip1 {
+    position: relative;
+    top: 17rem;
+    left: 19vw;
+    width: 420px;
+    align-items: flex-end;
+    transform: scale(0.9)!important;
+
+  }
+  .utility .utility-tooltip2 {
+    position: relative;
+    top: 18rem;
+    left: 30vw;
+    width: 420px;
+    transform: scale(0.9)!important;
+
+    align-items: flex-end;
+  }
+  .utility .utility-tooltip3 {
+    position: relative;
+    top: 18rem;
+    left: 27vw;
+    width: 420px;
+    transform: scale(0.9)!important;
+
+  }
+  .utility .utility-tooltip4 {
+    position: relative;
+    top: 18rem;
+    left: 26vw;
+    width: 420px;
+    align-items: flex-end;
+    transform: scale(0.9)!important;
+
+
+  }
+  .utility .utility-tooltip5 {
+    position: relative;
+    left: 25vw;
+    top: 18rem;
+    width: 420px;
+    align-items: flex-end;
+    transform: scale(0.9)!important;
+
+  }
+  .utility .utility-tooltip5 .tootltip5_5 {
+    position: absolute;
+    right: -1em;
+    z-index: 1;
+    top: -6rem;
+    transform: scale(0.9)!important;
+
+  }
+}
+@media (min-width: 550px) and (max-width: 600px) {
+  .utility {
+    max-height: 121rem;
+  }
+  .utility .utility-tooltip1 {
+    position: relative;
+    top: 17rem;
+    left: 13vw;
+    width: 420px;
+    align-items: flex-end;
+    transform: scale(0.9) !important;
+  }
+
+  .utility .utility-tooltip2 {
+    position: relative;
+    top: 15rem;
+    left: 14vw;
+    width: 420px;
+    transform: scale(0.9) !important;
+    align-items: flex-end;
+  }
+
+  .utility .utility-tooltip3 {
+    position: relative;
+    top: 13rem;
+    left: 14vw;
+    width: 420px;
+    transform: scale(0.9) !important;
+  }
+
+  .utility .utility-tooltip4 {
+    position: relative;
+    top: 11rem;
+    left: 14vw;
+    width: 420px;
+    align-items: flex-end;
+    transform: scale(0.9) !important;
+  }
+
+  .utility .utility-tooltip5 {
+    position: relative;
+    left: 16vw;
+    top: 9rem;
+    width: 420px;
+    align-items: flex-end;
+    transform: scale(0.9) !important;
+  }
+}
+@media (min-width: 500px) and (max-width: 550px) {
+  .utility {
+    max-height: 121rem;
+  }
+  .utility .utility-tooltip1 {
+    position: relative;
+    top: 17rem;
+    left: 13vw;
+    width: 420px;
+    align-items: flex-end;
+    transform: scale(0.85) !important;
+  }
+
+  .utility .utility-tooltip2 {
+    position: relative;
+    top: 15rem;
+    left: 14vw;
+    width: 420px;
+    transform: scale(0.85) !important;
+    align-items: flex-end;
+  }
+
+  .utility .utility-tooltip3 {
+    position: relative;
+    top: 13rem;
+    left: 14vw;
+    width: 420px;
+    transform: scale(0.85) !important;
+  }
+
+  .utility .utility-tooltip4 {
+    position: relative;
+    top: 11rem;
+    left: 14vw;
+    width: 420px;
+    align-items: flex-end;
+    transform: scale(0.85) !important;
+  }
+
+  .utility .utility-tooltip5 {
+    position: relative;
+    left: 16vw;
+    top: 9rem;
+    width: 420px;
+    align-items: flex-end;
+    transform: scale(0.85) !important;
+  }
+}
+@media (min-width: 350px) and (max-width: 500px) {
+
+  .utility {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 121rem;
+  }
+  .utility .utility-tooltip1 {
+    position: relative;
+    top: 17rem;
+    left: 0;
+    width: 420px;
+    align-items: flex-end;
+    transform: scale(0.85) !important;
+  }
+
+  .utility .utility-tooltip1 .tootltip1_1 {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    width: 6rem;
+  }
+
+  .utility .utility-tooltip2 {
+    position: relative;
+    top: 14rem;
+    left: 0;
+    width: 420px;
+    transform: scale(0.85) !important;
+    align-items: flex-end;
+  }
+  .utility .utility-tooltip2 .tootltip2_2 {
+    position: absolute;
+    right: 19em;
+    z-index: 1;
+    top: -1rem;
+    width: 7rem;
+  }
+  .utility .utility-tooltip2 .tooltip2-title {
+    top: 2rem;
+    color: aqua;
+    left: 8rem;
+    font-size: 1.4rem;
+    width: 66%;
+    position: absolute;
+  }
+
+  .utility .utility-tooltip3 {
+    position: relative;
+    top: 11rem;
+    left: 0;
+    width: 420px;
+    transform: scale(0.85) !important;
+  }
+  .utility .utility-tooltip3 .tootltip3_3 {
+    position: absolute;
+    right: -0.4em;
+    z-index: 1;
+    top: -0.5rem;
+    width: 7rem;
+  }
+  .utility .utility-tooltip3 .tooltip3-title {
+    top: 3rem;
+    color: aqua;
+    left: 1rem;
+    font-size: 1.4rem;
+    width: 74%;
+    position: absolute;
+  }
+  .utility .utility-tooltip4 {
+    position: relative;
+    top: 8rem;
+    left: 0;
+    width: 420px;
+    align-items: flex-end;
+    transform: scale(0.85) !important;
+  }
+  .utility .utility-tooltip4 .tootltip4_4 {
+    position: absolute;
+    right: 19em;
+    z-index: 1;
+    width: 7rem;
+  }
+  .utility .utility-tooltip4 .tooltip4-title {
+    top: 3rem;
+    color: aqua;
+    font-size: 1.4rem;
+    width: 90%;
+    position: absolute;
+    left: 4rem;
+  }
+
+  .utility .utility-tooltip5 {
+    position: relative;
+    left: 0;
+    top: 5rem;
+    width: 420px;
+    align-items: flex-end;
+    transform: scale(0.85) !important;
+  }
+
+  .utility .utility-tooltip5 .tootltip5_5 {
+    position: absolute;
+    right: -0.5em;
+    z-index: 1;
+    width: 7rem;
+    top: 0;
+  }
+  .utility .utility-tooltip5 .tooltip5-title {
+    top: 3rem;
+    color: aqua;
+    font-size: 1.4rem;
+    width: 81%;
+    position: absolute;
+  }
+}

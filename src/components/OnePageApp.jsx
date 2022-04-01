@@ -26,7 +26,7 @@ export default function OnePageApp(props) {
                 reset: false,
             });
             sr.reveal(
-                `nav,.home,.releases,.utility,.departments,.our-story,.road-map,.team-force,.vote,.join-us,.footer`,
+                `nav,.home,.about,.utility,.departments,.our-story,.road-map,.team-force,.vote,.join-us,.footer`,
                 {
                     interval: 100,
                 }
