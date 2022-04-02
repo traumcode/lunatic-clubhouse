@@ -429,7 +429,7 @@
     transform: scale(0.85) !important;
   }
 }
-@media (min-width: 350px) and (max-width: 500px) {
+@media (min-width: 320px) and (max-width: 500px) {
 
   .utility {
     display: flex;
@@ -446,13 +446,21 @@
     transform: scale(0.85) !important;
   }
 
+
   .utility .utility-tooltip1 .tootltip1_1 {
     position: absolute;
     right: 0;
     z-index: 1;
     width: 6rem;
   }
-
+  .utility .utility-tooltip1 .tooltip1-title {
+    top: 3rem;
+    color: aqua;
+    font-size: 1.4rem;
+    left: -5vw;
+    width: 90%;
+    position: absolute;
+  }
   .utility .utility-tooltip2 {
     position: relative;
     top: 14rem;
