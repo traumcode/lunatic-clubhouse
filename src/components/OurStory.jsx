@@ -11,31 +11,31 @@ import {MdPlayArrow} from 'react-icons/md'
 export default function OurStory(props) {
     const photos = [Photo1, Photo2, Photo3, Photo4, Photo5]
     const texts = [
-    "                    The Beginnings\n" +
-    "                    The Moon is grey and cold. The wind blows as a lunar sandstorm forms. All of a sudden three mysterious, hooded figures appear. They are walking through the wind and dust, moving steadily, but with a clear goal in sight. Having observed some lights in the distance, the figures agree that it resembles a metropolis…the TerraVerse, an intergalactic world that is continuously expanding. New species of LUNAtics are starting to populate this city, such as the Skelly Punks, who are searching for treasures, Goochies who are fighting for their lands, Puffins are at war with Eels, working on their mental health and Crunks are preparing for the zombie apocalypse. These are just a few of the species of LUNAtics that have begun to populate this new world.\n" +
-    "\n" +
-    "                    Each race has brought something special to the TerraVerse, and they all have their missions to carry out.\n" +
-    "                    The Founders, a group of seven LUNAtics, got together and decided to form a crew. Someone needed to bring all those missions to the same place…\n" +
-    "\n" +
-    "                    They would provide value to the TerraVerse by establishing a venue where all of the LUNAtics could interact. It'll be known as the Lunatic Clubhouse…\n" +
-    "                    The Founders devised a variety of activities and challenges to keep all inhabitants of this universe occupied for many seasons to come. It all started with the Lunatic Vote.\n" +
-    "\n" +
-    "                    This vote encourages all members to vote for their favourite community. With the help of the Lunatics, the Clubhouse is rapidly expanding in size and gaining a reputation as the best hangout in the galaxy.\n" +
-    "\n" +
-    "                    Everything appears to be going well thus far, as the initial members appear to be having a nice time. The atmosphere changes when a TerraBot, warns the LUNAtics that a meteor shower may strike the Lunatic Clubhouse…\n" +
-    "                    Clubhouse Activities\n" +
-    "                    The Clubhouse has been open for a while, and all members are having a good time whenever they choose to visit. The meteor shower that the TerraBot forewarned us about arrived, and the Lunatic Clubhouse was indeed hit by one. However, inside that meteor the Founders discovered a Dragon Egg, one of the rarest and priceless items on the TerraVerse.\n" +
-    "\n" +
-    "                    It was decided that a week-long series of activities was to be organised, in which the winner would get the egg. Participants had to prepare for a variety of themes, including history and geography, as well as wildlife animals and more. Most importantly, their knowledge of the TerraVerse was tested through questions about the different communities and protocols of this world. There could only be one winner in the end, and he now owns a dragon egg that is soon to hatch.\n" +
-    "\n" +
-    "                    Even though the doors have been opened to the public and the member’s area has been increasing in volume, the team is still working on a number of undertakings behind the scenes. Many more rooms are yet to be opened and revealed to the public.\n" +
-    "                    So far, we've just had a glimpse of the #entry and #rooftopbar.\n" +
-    "                    Today, we get to witness the ground floor's major interior design. This is where the majority of the action takes place.\n" +
-    "\n" +
-    "                    Several LUNAtics will compete in challenges in order to win more LUNATIC POINTS for the community they represent. This room will also be used for LUNAtics to obtain fresh bounty quests.\n" +
-    "                    The Clubhouse drone, XR-17, maintains track of all the goings-on inside. He is constantly on the lookout and studying everyone's moves.\n" +
-    "\n" +
-    "                    Let's simply say that whenever XR-17 informs the Managers about anything questionable, our SECURITY will handle it in the Back Room...", "Clubhouse Activities\n" +
+        "                    The Beginnings\n" +
+        "                    The Moon is grey and cold. The wind blows as a lunar sandstorm forms. All of a sudden three mysterious, hooded figures appear. They are walking through the wind and dust, moving steadily, but with a clear goal in sight. Having observed some lights in the distance, the figures agree that it resembles a metropolis…the TerraVerse, an intergalactic world that is continuously expanding. New species of LUNAtics are starting to populate this city, such as the Skelly Punks, who are searching for treasures, Goochies who are fighting for their lands, Puffins are at war with Eels, working on their mental health and Crunks are preparing for the zombie apocalypse. These are just a few of the species of LUNAtics that have begun to populate this new world.\n" +
+        "\n" +
+        "                    Each race has brought something special to the TerraVerse, and they all have their missions to carry out.\n" +
+        "                    The Founders, a group of seven LUNAtics, got together and decided to form a crew. Someone needed to bring all those missions to the same place…\n" +
+        "\n" +
+        "                    They would provide value to the TerraVerse by establishing a venue where all of the LUNAtics could interact. It'll be known as the Lunatic Clubhouse…\n" +
+        "                    The Founders devised a variety of activities and challenges to keep all inhabitants of this universe occupied for many seasons to come. It all started with the Lunatic Vote.\n" +
+        "\n" +
+        "                    This vote encourages all members to vote for their favourite community. With the help of the Lunatics, the Clubhouse is rapidly expanding in size and gaining a reputation as the best hangout in the galaxy.\n" +
+        "\n" +
+        "                    Everything appears to be going well thus far, as the initial members appear to be having a nice time. The atmosphere changes when a TerraBot, warns the LUNAtics that a meteor shower may strike the Lunatic Clubhouse…\n" +
+        "                    Clubhouse Activities\n" +
+        "                    The Clubhouse has been open for a while, and all members are having a good time whenever they choose to visit. The meteor shower that the TerraBot forewarned us about arrived, and the Lunatic Clubhouse was indeed hit by one. However, inside that meteor the Founders discovered a Dragon Egg, one of the rarest and priceless items on the TerraVerse.\n" +
+        "\n" +
+        "                    It was decided that a week-long series of activities was to be organised, in which the winner would get the egg. Participants had to prepare for a variety of themes, including history and geography, as well as wildlife animals and more. Most importantly, their knowledge of the TerraVerse was tested through questions about the different communities and protocols of this world. There could only be one winner in the end, and he now owns a dragon egg that is soon to hatch.\n" +
+        "\n" +
+        "                    Even though the doors have been opened to the public and the member’s area has been increasing in volume, the team is still working on a number of undertakings behind the scenes. Many more rooms are yet to be opened and revealed to the public.\n" +
+        "                    So far, we've just had a glimpse of the #entry and #rooftopbar.\n" +
+        "                    Today, we get to witness the ground floor's major interior design. This is where the majority of the action takes place.\n" +
+        "\n" +
+        "                    Several LUNAtics will compete in challenges in order to win more LUNATIC POINTS for the community they represent. This room will also be used for LUNAtics to obtain fresh bounty quests.\n" +
+        "                    The Clubhouse drone, XR-17, maintains track of all the goings-on inside. He is constantly on the lookout and studying everyone's moves.\n" +
+        "\n" +
+        "                    Let's simply say that whenever XR-17 informs the Managers about anything questionable, our SECURITY will handle it in the Back Room...", "Clubhouse Activities\n" +
         "The Clubhouse has been open for a while, and all members are having a good time whenever they choose to visit. The meteor shower that the TerraBot forewarned us about arrived, and the Lunatic Clubhouse was indeed hit by one. However, inside that meteor the Founders discovered a Dragon Egg, one of the rarest and priceless items on the TerraVerse.\n" +
         "\n" +
         "It was decided that a week-long series of activities was to be organised, in which the winner would get the egg. Participants had to prepare for a variety of themes, including history and geography, as well as wildlife animals and more. Most importantly, their knowledge of the TerraVerse was tested through questions about the different communities and protocols of this world. There could only be one winner in the end, and he now owns a dragon egg that is soon to hatch.\n" +
@@ -68,21 +68,21 @@ export default function OurStory(props) {
     const [ photo, setPhoto ] = useState(photos[0]);
     const [ text, setText ] = useState(texts[0])
 
-const handleChangeIndex = () => {
-    if(index === photos.length-1){
-        setIndex(0)
-        setPhoto(photos[0])
-        setText(texts[0])
-    } else {
-        setIndex(index++)
-        setIndex(index)
-        setPhoto(photos[index])
-        setText(texts[index])
+    const handleChangeIndex = () => {
+        if(index === photos.length-1){
+            setIndex(0)
+            setPhoto(photos[0])
+            setText(texts[0])
+        } else {
+            setIndex(index++)
+            setIndex(index)
+            setPhoto(photos[index])
+            setText(texts[index])
+        }
+
+
+
     }
-
-
-
-}
     return (
         <div className='our-story' id='story'>
             <h1 className='our-story-title'>OUR STORY</h1>

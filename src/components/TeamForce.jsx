@@ -23,7 +23,7 @@ export default function TeamForce(props) {
                 <div className='team-force-member-container'>
                     <img src={Photo3} alt='photo' className='team-photo'/>
                     <h5 className='team-force-name'>Vicorico</h5>
-                    <p className='team-force-name'>Executive Manager</p>
+                    <p className='team-force-name'>Executive Manager & Smart Contract Developer</p>
 
                 </div>
                 <div className='team-force-member-container'>
@@ -62,8 +62,8 @@ export default function TeamForce(props) {
                 </div>
                 <div className='team-force-member-container'>
                     <img src={Photo8} alt='photo' className='team-photo'/>
-                    <h5 className='team-force-name'>Rian Cult</h5>
-                    <p className='team-force-name'>Music Producer</p>
+                    <h5 className='team-force-name'>ImBeingJuJu</h5>
+                    <p className='team-force-name'>Community builder</p>
                 </div>
             </div>
         </div>

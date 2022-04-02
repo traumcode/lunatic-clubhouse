@@ -54,7 +54,7 @@ export default function Utility(props) {
                     <Tooltip5_5 className='tootltip5_5'/>
                     <Tooltip1 className='tootltip5'/>
                     <h1 className='tooltip5-title'>Airdrop eligibility for future projects </h1>
-                    <p className='tooltip5-description'>To be updated... </p>
+                    <p className='tooltip5-description'>The crew holders will be eligble for further airdrops and projects!</p>
                 </div>
         </div>
     );
