@@ -11,7 +11,7 @@ import {AiOutlineArrowRight} from "react-icons/ai";
 export default function OurStory(props) {
     const photos = [Photo1, Photo2, Photo3, Photo4, Photo5]
     const texts = [
-        "                    The Beginnings\n" +
+        "                    THE BEGINNINGS\n" +
         "                    The Moon is grey and cold. The wind blows as a lunar sandstorm forms. All of a sudden three mysterious, hooded figures appear. They are walking through the wind and dust, moving steadily, but with a clear goal in sight. Having observed some lights in the distance, the figures agree that it resembles a metropolis…the TerraVerse, an intergalactic world that is continuously expanding. New species of LUNAtics are starting to populate this city, such as the Skelly Punks, who are searching for treasures, Goochies who are fighting for their lands, Puffins are at war with Eels, working on their mental health and Crunks are preparing for the zombie apocalypse. These are just a few of the species of LUNAtics that have begun to populate this new world.\n" +
         "\n" +
         "                    Each race has brought something special to the TerraVerse, and they all have their missions to carry out.\n" +

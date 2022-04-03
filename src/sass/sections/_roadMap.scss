@@ -46,6 +46,31 @@
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 800px) {
+  .road-map .road-map-content {
+    display: grid;
+    gap: 4vw;
+    padding: 4vw;
+    grid-template-columns: 1fr;
 
+  }
+  .road-map {
+    height: 100vh;
+  }
+
+  .circle-svg {
+    width: 10rem!important;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .circle-svg {
+    width: 11rem!important;
+  }
+  .road-map .road-map-content .circle-container .circle-number {
+    position: absolute;
+    font-size: 1rem;
+    color: white;
+  }
 }
