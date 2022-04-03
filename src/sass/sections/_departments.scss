@@ -55,6 +55,8 @@
     display: flex;
     height: 20vw;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
