@@ -5,8 +5,8 @@ import Photo2 from '../assets/stories/02.png';
 import Photo3 from '../assets/stories/03.jpeg';
 import Photo4 from '../assets/stories/04.jpeg';
 import Photo5 from '../assets/stories/05.png';
-import {ReactComponent as Button} from "../assets/stories/ourStory_buton_dr.svg";
-import {MdPlayArrow} from 'react-icons/md'
+import {ReactComponent as Button} from "../assets/svgs/sageata.svg";
+import {AiOutlineArrowRight} from "react-icons/ai";
 
 export default function OurStory(props) {
     const photos = [Photo1, Photo2, Photo3, Photo4, Photo5]
@@ -85,13 +85,15 @@ export default function OurStory(props) {
     }
     return (
         <div className='our-story' id='story'>
+            <img src={photo} alt='casino' className='our-story-photo' />
             <h1 className='our-story-title'>OUR STORY</h1>
             <div className='our-story-grid'>
                 <OurS className='our-story-frame'/>
                 <div className='our-story-text'>{text} </div>
+                <div className='our-story-button2' onClick={() => handleChangeIndex()}>
+                    <AiOutlineArrowRight style={{color: 'white'}}/>
+                </div>
             </div>
-            <img src={photo} alt='casino' className='our-story-photo' />
-            <Button style={{width: '9vw', height: '9vw', position: 'absolute', top: '66vw', fill: 'aqua', right: '11vw', cursor: 'pointer'}} onClick={() => handleChangeIndex()}/>
         </div>
     );
 }
