@@ -3,7 +3,6 @@
   background-image: url("../../assets/start_background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 50vw;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -52,12 +51,7 @@
     gap: 4vw;
     padding: 4vw;
     grid-template-columns: 1fr;
-
   }
-  .road-map {
-    height: 100vh;
-  }
-
   .circle-svg {
     width: 10rem!important;
   }
