@@ -5,7 +5,6 @@ import Photo2 from '../assets/stories/02.png';
 import Photo3 from '../assets/stories/03.jpeg';
 import Photo4 from '../assets/stories/04.jpeg';
 import Photo5 from '../assets/stories/05.png';
-import {ReactComponent as Button} from "../assets/svgs/sageata.svg";
 import {AiOutlineArrowRight} from "react-icons/ai";
 
 export default function OurStory(props) {
@@ -64,27 +63,40 @@ export default function OurStory(props) {
         "\n" +
         "The meetings that will be held here were thoroughly considered during the design process. This amphitheatre design allows all members to be seen and heard by everyone in the room, ensuring optimal productivity and output from the meeting."]
 
-    let [ index, setIndex] = useState(0)
-    const [ photo, setPhoto ] = useState(photos[0]);
-    const [ text, setText ] = useState(texts[0])
+    let [index, setIndex] = useState(0)
+    const [photo, setPhoto] = useState(photos[0]);
+    const [text, setText] = useState(texts[0])
+
+    const [ isLoading, setIsLoading ] = useState(false);
 
     const handleChangeIndex = () => {
-        if(index === photos.length-1){
+        if (index === photos.length - 1) {
             setIndex(0)
-            setPhoto(photos[0])
+            // setPhoto(photos[0])
             setText(texts[0])
         } else {
             setIndex(index++)
             setIndex(index)
-            setPhoto(photos[index])
+            // setPhoto(photos[index])
             setText(texts[index])
         }
     }
 
+    useEffect(() => {
+        setIsLoading(true)
+        setPhoto(photos[index])
+        setIsLoading(false)
+    }, [index])
+
+    if(isLoading) {
+        return (
+            <div>ISLOADING</div>
+        )
+    }
 
     return (
         <div className='our-story' id='story'>
-            <img src={photo} alt='casino' className='our-story-photo' />
+            <img src={photo} alt='casino' className='our-story-photo'/>
             <h1 className='our-story-title'>OUR STORY</h1>
             <div className='our-story-grid'>
                 <OurS className='our-story-frame'/>
