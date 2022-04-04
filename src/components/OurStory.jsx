@@ -79,10 +79,9 @@ export default function OurStory(props) {
             setPhoto(photos[index])
             setText(texts[index])
         }
-
-
-
     }
+
+
     return (
         <div className='our-story' id='story'>
             <img src={photo} alt='casino' className='our-story-photo' />

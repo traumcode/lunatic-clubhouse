@@ -26,3 +26,15 @@
     padding: 7vw;
   }
 }
+
+@media screen and (max-width: 940px) {
+  .vote {
+    background-image: url("../../assets/vote-back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

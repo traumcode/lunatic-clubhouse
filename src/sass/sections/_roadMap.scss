@@ -25,6 +25,7 @@
       align-content: flex-start;
       flex-wrap: wrap;
       opacity: 0.3;
+      cursor: pointer;
       &:hover {
         opacity: 1;
       }
@@ -43,6 +44,16 @@
       font-size: 1.7vw;
     }
   }
+}
+.popover-header {
+  background-color: #b400ff!important;
+  border-bottom: 1px solid rgb(90 23 73 / 74%);
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px);
+  font-size: 1rem;
+  margin-bottom: 0;
+  font-family: audiowide, serif;
+  padding: .5rem 1rem;
 }
 
 @media screen and (max-width: 800px) {
