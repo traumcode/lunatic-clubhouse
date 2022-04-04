@@ -46,7 +46,7 @@ export default function OnePageApp(props) {
     return (
 
         <div className="app-container">
-            <a href='https://discord.gg/NQWP7R5n'><img src={Discord} alt='discord' className='discord-icon'/></a>
+            <a href='https://discord.gg/pDwpxrqFhD'><img src={Discord} alt='discord' className='discord-icon'/></a>
             <ScrollToTop/>
             <Navbar/>
             <Home/>
