@@ -1,9 +1,13 @@
 .vote {
-  height: 59vw;
   text-align: center;
   background-image: url("../../assets/vote-back.png");
   background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
+  width: 100%;
+  max-height: 105rem;
+  min-height: 100%;
+  overflow: hidden;
   .vote-title {
     font-size: 3vw;
     padding-top: 3vw;
@@ -12,9 +16,9 @@
   }
   .vote-frate {
     width: 30vw;
-    position: absolute;
-    left: 10vw;
-    top: 8vw;
+    position: relative;
+    left: -25vw;
+    top: -9vw;
   }
   .vote-text {
     width: 39vw;
@@ -29,12 +33,68 @@
 
 @media screen and (max-width: 940px) {
   .vote {
+    text-align: center;
     background-image: url("../../assets/vote-back.png");
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
-    text-align: center;
+    width: 100%;
     display: flex;
+    max-height: 105rem;
+    min-height: 100%;
+    overflow: hidden;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;
   }
+  .vote-frame {
+    position: relative;
+  }
+  .vote .vote-frate {
+    width: 400px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .vote .vote-text {
+    width: 24rem;
+    position: absolute;
+    top: 7vw;
+    color: white;
+    left: 0;
+    font-size: 0.9rem;
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .vote .vote-text {
+    width: 24rem;
+    position: absolute;
+    top: 9vw;
+    color: white;
+    left: 0;
+    font-size: 0.9rem;
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .vote .vote-text {
+    width: 24rem;
+    position: absolute;
+    top: 11vw;
+    color: white;
+    left: 0;
+    font-size: 0.9rem;
+    padding: 1em;
+  }
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .vote-frame {
+    transform: scale(0.9);
+  }
+
 }

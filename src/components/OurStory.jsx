@@ -67,32 +67,20 @@ export default function OurStory(props) {
     const [photo, setPhoto] = useState(photos[0]);
     const [text, setText] = useState(texts[0])
 
-    const [ isLoading, setIsLoading ] = useState(false);
-
     const handleChangeIndex = () => {
         if (index === photos.length - 1) {
             setIndex(0)
-            // setPhoto(photos[0])
-            setText(texts[0])
         } else {
             setIndex(index++)
             setIndex(index)
-            // setPhoto(photos[index])
-            setText(texts[index])
         }
     }
 
     useEffect(() => {
-        setIsLoading(true)
         setPhoto(photos[index])
-        setIsLoading(false)
+        setText(texts[index])
     }, [index])
 
-    if(isLoading) {
-        return (
-            <div>ISLOADING</div>
-        )
-    }
 
     return (
         <div className='our-story' id='story'>
