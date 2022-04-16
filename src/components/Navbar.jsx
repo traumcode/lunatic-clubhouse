@@ -3,7 +3,7 @@ import {MdClose} from "react-icons/md";
 import {FaTwitter} from "react-icons/fa";
 import {FaGitter} from "react-icons/fa";
 
-import { useWallet, useConnectedWallet, WalletStatus } from '@terra-money/wallet-provider'
+import { useWallet, useConnectedWallet, WalletStatus } from '@terra-money/wallet-provider';
 import {ConnectWallet} from "../app/ConnectWallet"
 import {Button, Modal} from "react-bootstrap";
 
