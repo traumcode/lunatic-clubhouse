@@ -1,11 +1,13 @@
 .whitepaper {
   display: flex;
   justify-content: center;
-  background-image: url(http://localhost:3000/static/media/start_background.850bc650664e1913b5e2.png);
+  background-image: url("../../assets/start_background.png");
   /* align-items: center; */
   /* flex-direction: column; */
   background-position: center center;
+  background-size: cover;
   height: 100vh;
+  overflow: hidden;
   }
   .grid-white {
     display: grid;
@@ -22,7 +24,7 @@
     display: block;
     -webkit-user-select: none;
     -ms-user-select: none;
-    height: 100vw!important;
+    height: 100vh!important;
     width: auto!important;
     user-select: none;
     max-height: 846px;
