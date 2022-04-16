@@ -3,31 +3,31 @@ import {MdClose} from "react-icons/md";
 import {FaTwitter} from "react-icons/fa";
 import {FaGitter} from "react-icons/fa";
 
-import { useWallet, useConnectedWallet, WalletStatus } from '@terra-money/wallet-provider';
-import {ConnectWallet} from "../app/ConnectWallet"
+// import { useWallet, useConnectedWallet, WalletStatus } from '@terra-money/wallet-provider';
+// import {ConnectWallet} from "../app/ConnectWallet"
 import {Button, Modal} from "react-bootstrap";
 
 export default function Navbar(props) {
     const [navState, setNavState] = useState(false);
-    const [updating, setUpdating] = useState(true);
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
-    const { status } = useWallet()
-
-    const connectedWallet = useConnectedWallet()
-
-    console.log(status)
-    console.log(connectedWallet)
-
-    useEffect(() => {
-        const prefetch = async () => {
-            setUpdating(false)
-        }
-        prefetch()
-    }, [connectedWallet])
+    // const [updating, setUpdating] = useState(true);
+    // const [show, setShow] = useState(false);
+    //
+    // const handleClose = () => setShow(false);
+    // const handleShow = () => setShow(true);
+    //
+    // const { status } = useWallet()
+    //
+    // const connectedWallet = useConnectedWallet()
+    //
+    // console.log(status)
+    // console.log(connectedWallet)
+    //
+    // useEffect(() => {
+    //     const prefetch = async () => {
+    //         setUpdating(false)
+    //     }
+    //     prefetch()
+    // }, [connectedWallet])
 
     return (
         <div>
@@ -71,9 +71,9 @@ export default function Navbar(props) {
                         <a href="#vote">VOTE</a>
                     </li>
                     <li>
-                        <Button variant="transparent" className='modal-button' onClick={handleShow}>
-                            {status === 'WALLET_CONNECTED' ?  "DISCONNECT" : "CONNECT WALLET"}
-                        </Button>
+                        {/*<Button variant="transparent" className='modal-button' onClick={handleShow}>*/}
+                        {/*    {status === 'WALLET_CONNECTED' ?  "DISCONNECT" : "CONNECT WALLET"}*/}
+                        {/*</Button>*/}
                     </li>
                     <li className='twitter-icon'>
                         <FaTwitter/>
@@ -83,17 +83,17 @@ export default function Navbar(props) {
 
         </nav>
 
-            <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                    <Modal.Title style={{color: 'white', fontFamily: 'Audiowide'}}>Connect Wallet</Modal.Title>
-                </Modal.Header>
-                <Modal.Body><ConnectWallet/></Modal.Body>
-                <Modal.Footer>
-                    <Button variant="danger" onClick={handleClose}>
-                        Close
-                    </Button>
-                </Modal.Footer>
-            </Modal>
+            {/*<Modal show={show} onHide={handleClose}>*/}
+            {/*    <Modal.Header closeButton>*/}
+            {/*        <Modal.Title style={{color: 'white', fontFamily: 'Audiowide'}}>Connect Wallet</Modal.Title>*/}
+            {/*    </Modal.Header>*/}
+            {/*    <Modal.Body><ConnectWallet/></Modal.Body>*/}
+            {/*    <Modal.Footer>*/}
+            {/*        <Button variant="danger" onClick={handleClose}>*/}
+            {/*            Close*/}
+            {/*        </Button>*/}
+            {/*    </Modal.Footer>*/}
+            {/*</Modal>*/}
             </div>
     );
 }
