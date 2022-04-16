@@ -4,6 +4,7 @@ import Home from "../components/Home";
 import About from "../components/About";
 import Utility from "../components/Utility";
 import Departments from "../components/Departments";
+import NftSlide from "../components/NftSlide";
 import OurStory from "../components/OurStory";
 import RoadMap from "../components/RoadMap";
 import TeamForce from "../components/TeamForce";
@@ -26,7 +27,7 @@ export default function OnePageApp(props) {
                 reset: false,
             });
             sr.reveal(
-                `nav,.home,.about,.utility,.departments,.our-story,.road-map,.team-force,.vote,.join-us,.footer`,
+                `nav,.home,.about,.utility,.nft-container,.departments,.our-story,.road-map,.team-force,.vote,.join-us,.footer`,
                 {
                     interval: 100,
                 }
@@ -52,6 +53,7 @@ export default function OnePageApp(props) {
             <Home/>
             <About/>
             <Utility/>
+            <NftSlide/>
             <Departments/>
             <OurStory/>
             <RoadMap/>
