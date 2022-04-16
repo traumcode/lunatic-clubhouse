@@ -157,3 +157,34 @@ nav {
   }
 }
 
+.modal-button {
+  width: 107%;
+  padding: 0!important;
+  font-size: clamp(8px, 1vw, 20px)!important;
+  margin: 0!important;
+  color: aqua!important;
+}
+
+.connect-button {
+  border: none;
+  font-family: Audiowide, sans-serif;
+  background: transparent;
+  color: aqua;
+}
+
+.modal-content {
+  position: relative;
+  top: 20vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: transparent!important;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+.btn-close {
+  color: white!important;
+}

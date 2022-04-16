@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import Navbar from "../components/Navbar";
 import Home from "../components/Home";
 import About from "../components/About";
@@ -15,6 +15,7 @@ import scrollreveal from "scrollreveal";
 import "../sass/index.scss";
 import JoinUs from "../components/JoinUs";
 import Discord from '../assets/n__discord.png'
+
 
 export default function OnePageApp(props) {
 
