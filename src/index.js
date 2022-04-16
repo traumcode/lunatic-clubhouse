@@ -7,11 +7,9 @@ import { getChainOptions, WalletProvider } from '@terra-money/wallet-provider'
 
 getChainOptions().then((chainOption) => {
     ReactDOM.render(
-        <React.StrictMode>
             <WalletProvider {...chainOption}>
                 <App />
-            </WalletProvider>
-        </React.StrictMode>,
+            </WalletProvider>,
         document.getElementById("root"),
         )
 })
