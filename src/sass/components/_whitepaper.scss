@@ -24,7 +24,7 @@
     display: block;
     -webkit-user-select: none;
     -ms-user-select: none;
-    height: 100vh!important;
+    height: 70vh!important;
     width: auto!important;
     user-select: none;
     max-height: 846px;
@@ -38,4 +38,8 @@
     color: transparent;
     transform: translate(-50%, -50%) rotate(0deg);
     pointer-events: none;
+  }
+
+  .react-pdf__Page {
+    padding: 10vw!important;
   }

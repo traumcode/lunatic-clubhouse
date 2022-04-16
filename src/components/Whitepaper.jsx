@@ -28,29 +28,29 @@ export default function Whitepaper(props) {
 
     return (
         <div className='whitepaper'>
-                <Document
-                    file={pdf}
-                    options={{workerSrc: "/pdf.worker.js"}}
-                    onLoadSuccess={documentSuccess}
-                    className='document-pdf'
+            <Document
+                file={pdf}
+                options={{workerSrc: "/pdf.worker.js"}}
+                onLoadSuccess={documentSuccess}
+                className='document-pdf'
+            >
+                <Page pageNumber={pageNumber}/>
+            </Document>
+            <div className='document-pages'>
+                <p>
+                    Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
+                </p>
+                <button type="button" disabled={pageNumber <= 1} onClick={previousPage}>
+                    Previous
+                </button>
+                <button
+                    type="button"
+                    disabled={pageNumber >= numPages}
+                    onClick={nextPage}
                 >
-                    <Page pageNumber={pageNumber}/>
-                </Document>
-                <div className='document-pages'>
-                    <p>
-                        Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
-                    </p>
-                    <button type="button" disabled={pageNumber <= 1} onClick={previousPage}>
-                        Previous
-                    </button>
-                    <button
-                        type="button"
-                        disabled={pageNumber >= numPages}
-                        onClick={nextPage}
-                    >
-                        Next
-                    </button>
-                </div>
+                    Next
+                </button>
+            </div>
 
         </div>
     );
