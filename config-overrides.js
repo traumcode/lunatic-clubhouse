@@ -13,7 +13,7 @@ module.exports = function override(config, env) {
             process: 'process/browser',
         }),
     );
-    config.optimization.minimize = false;
+    config.minimize = false;
     config.ignoreWarnings = [/Failed to parse source map/];
 
     return config;
