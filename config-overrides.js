@@ -14,6 +14,7 @@ module.exports = function override(config, env) {
         }),
     );
     config.optimization.minify = false;
+    config.optimization.minimizer = [];
     config.ignoreWarnings = [/Failed to parse source map/];
 
     return config;
