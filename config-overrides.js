@@ -1,4 +1,5 @@
 const { ProvidePlugin } = require('webpack');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = function override(config, env) {
     config.resolve.fallback = {
@@ -7,14 +8,19 @@ module.exports = function override(config, env) {
         buffer: require.resolve('buffer'),
     };
 
+
     config.plugins.push(
         new ProvidePlugin({
             Buffer: ['buffer', 'Buffer'],
             process: 'process/browser',
         }),
     );
-    config.minimize = false;
     config.ignoreWarnings = [/Failed to parse source map/];
 
     return config;
+};
+module.exports = {
+    optimization: {
+        minimize: false,
+    },
 };
