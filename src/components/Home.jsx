@@ -12,10 +12,10 @@ export default function Home() {
                 </video>
             </div>
             <div className='button-container'>
-                <a href="https://docs.terra.money/docs/learn/terra-station/wallet.html"
+                <a href="https://www.messier.art/mint/terra186fsgc6rgw96evzd7zmsfllj9cf66mlf5qfazq"
                    style={{textDecoration: 'none'}}>
                     <button className='button-64' role='button'>
-                        <span className="text">Getting Started</span>
+                        <span className="text">Mint now</span>
                     </button>
                 </a>
                 <Link to='/white' style={{textDecoration: 'none'}}>
