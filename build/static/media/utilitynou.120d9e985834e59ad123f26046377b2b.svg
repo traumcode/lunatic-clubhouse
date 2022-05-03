@@ -1,0 +1,23 @@
+<svg id="__utility_tooltip1" xmlns="http://www.w3.org/2000/svg" width="424.649" height="316.557" viewBox="0 0 424.649 316.557">
+  <g id="Group_186" data-name="Group 186">
+    <path id="Path_1285" data-name="Path 1285" d="M405.3,20.794H331.305L315.16.33H21.637L.34,17.883V270.908l19.278,25.119h74l16.145,20.458H403.278l21.3-17.547V45.908Z" transform="translate(-0.136 -0.132)" fill="#4d1a59" fill-rule="evenodd" opacity="0.89"/>
+    <g id="Group_185" data-name="Group 185">
+      <path id="Path_1286" data-name="Path 1286" d="M403.214,316.557H109.529l-.06-.078L93.384,296.093h-74l-.06-.078L0,270.848V17.655l.072-.06L21.429,0H315.12l.06.078,16.085,20.387h74l.06.078,19.326,25.167V298.9l-.072.06Zm-293.493-.4H403.07l21.171-17.439V45.847L405.059,20.866H331.067l-.06-.078L314.922.4H21.573L.4,17.84V270.71l19.182,24.981h74l.06.078Z" fill="aqua"/>
+    </g>
+    <path id="Path_1287" data-name="Path 1287" d="M542.83,21.86h83.331l15.917,21.387V54.54L622.795,29.426H548.8Z" transform="translate(-217.634 -8.764)" fill="aqua" fill-rule="evenodd"/>
+    <path id="Path_1288" data-name="Path 1288" d="M99.589,484.676H16.257L.34,463.289v-11.3l19.278,25.119h74Z" transform="translate(-0.136 -181.214)" fill="aqua" fill-rule="evenodd"/>
+    <path id="Path_1289" data-name="Path 1289" d="M6.12,16.032V2.84H22.133Z" transform="translate(-2.454 -1.139)" fill="aqua" fill-rule="evenodd"/>
+    <path id="Path_1290" data-name="Path 1290" d="M678.47,515.53h14.5V503.59Z" transform="translate(-272.015 -201.902)" fill="aqua" fill-rule="evenodd"/>
+  </g>
+  <g id="Group_190" data-name="Group 190" transform="translate(26.575 11.011)">
+    <g id="Group_187" data-name="Group 187">
+      <rect id="Rectangle_361" data-name="Rectangle 361" width="2.408" height="1.606" fill="aqua"/>
+    </g>
+    <g id="Group_188" data-name="Group 188" transform="translate(7.261)">
+      <path id="Path_1291" data-name="Path 1291" d="M177.847,19.986h-4.859V18.38h4.859Zm-9.705,0h-4.859V18.38h4.859Zm-9.711,0h-4.858V18.38h4.858Zm-9.711,0h-4.853V18.38h4.853Zm-9.711,0h-4.853V18.38h4.853Zm-9.711,0h-4.853V18.38H129.3Zm-9.705,0H114.74V18.38h4.853Zm-9.711,0h-4.853V18.38h4.853Zm-9.711,0H95.318V18.38h4.853Zm-9.711,0H85.607V18.38H90.46Zm-9.705,0H75.9V18.38h4.853Zm-9.711,0H66.191V18.38h4.853Zm-9.711,0H56.48V18.38h4.853Z" transform="translate(-56.48 -18.38)" fill="aqua"/>
+    </g>
+    <g id="Group_189" data-name="Group 189" transform="translate(133.486)">
+      <rect id="Rectangle_362" data-name="Rectangle 362" width="2.408" height="1.606" fill="aqua"/>
+    </g>
+  </g>
+</svg>

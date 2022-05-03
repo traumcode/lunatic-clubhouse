@@ -8,11 +8,10 @@ const crypto = require("crypto");
 const exec = require('child_process').exec;
 
 const multer = require('multer');
-const { stdout } = require('process');
 const upload = multer();
 
 console.log("AICI");
-app.use(express.static(path.join(__dirname, "./public"))); // Serve html file
+app.use(express.static(path.join(__dirname, "../build"), { index: false })); // Serve html file
 
 app.use(express.json({ limit: "100mb" })) // for parsing application/json
 app.use(express.urlencoded({ extended: true, limit: "100mb" })) // for parsing application/x-www-form-urlencoded
@@ -42,7 +41,7 @@ const makeAlphanum = text => {
     return res;
 }
 
-exec("rm -rf ./generate");
+exec(`rm -rf ${__dirname}/generate`);
 
 /* Run scripts to generate */
 let queuedProjects = [];
@@ -66,7 +65,7 @@ const generate = () => {
         );
 
         fs.writeFileSync(`${projectPath}/status`, 'generating');
-        const cmd = 'cd ./hashlips_art_engine && npm run generate';
+        const cmd = `cd ${__dirname}/hashlips_art_engine && npm run generate`;
 
         exec(cmd, function(error, _stdout, _stderr) {
             
@@ -77,7 +76,7 @@ const generate = () => {
             /* Generate error */
             const needsMoreLayers = stdout.includes("You need more layers or elements");
             const finishedOk = stdout.split("\n").filter(t => t?.trim().length).at(-1).includes("Created edition:");
-            // console.log({finishedOk})
+            
             if(!finishedOk && (stderr || needsMoreLayers)){
                 fs.writeFileSync(`${projectPath}/status`, 'error');
                 fs.writeFileSync(`${projectPath}/error`, needsMoreLayers? getMatchingLine(stdout, "You need more layers or elements") : stderr);
@@ -97,10 +96,11 @@ const generate = () => {
                 fs.writeFileSync(`${projectPath}/files`, JSON.stringify({ images, json }));
                 fs.writeFileSync(`${projectPath}/status`, 'finished');
 
-                /* Delete files after 2 minutes */
+                const DEL_MINS = 4;
+                /* Delete files after {DEL_MINS} minutes */
                 setTimeout(() => {
                     exec(`rm -rf ${projectPath}/`)
-                }, 120 * 1000)
+                }, DEL_MINS * 60 * 1000)
                 activeProjectId = undefined;
             }
 
@@ -128,8 +128,9 @@ app.post("/generate", upload.array('images', 200), async (req, res, err) => {
                 if(!imageFile) throw "Image not found: " + image.fileName;
                 if(!imageFile.mimetype.startsWith("image")) throw "File is not an image: " + image.fileName;
                 const { rarity } = image;
-                if(typeof rarity !== "number" || rarity < 1 || rarity > 100 || !Number.isInteger(rarity)) throw "image.rarity must be an integer between 1 and 100"
-                fs.writeFileSync(`${layerPath}/${makeAlphanum(image.name)} #${rarity}.${imageFile.mimetype.split("/")[1]}`, imageFile.buffer);
+                if(typeof rarity !== "number" || rarity < 1 || rarity > 100 || !Number.isInteger(rarity)) throw "image.rarity must be an integer between 1 and 100";
+                const imageName = makeAlphanum(image.fileName.split('.').slice(0, -1).join(''));
+                fs.writeFileSync(`${layerPath}/${imageName} #${rarity}.${imageFile.mimetype.split("/")[1]}`, imageFile.buffer);
             }
         }
         fs.writeFileSync(`${projectPath}/config.json`, 
@@ -187,6 +188,10 @@ app.get("/generate/:id", (req, res) => {
     }
     res.json({ status, error, files });
 });
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../build/index.html"))
+})
 
 app.listen(port, () => {
   console.log(`app listening on port ${port}`)

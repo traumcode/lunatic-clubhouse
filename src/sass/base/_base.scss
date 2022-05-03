@@ -53,6 +53,58 @@ h2 {
   flex-direction: row;
 }
 
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+.ai-center {
+  align-items: center;
+} 
+
+.jc-center {
+  justify-content: center;
+}
+
+.f-1 {
+  flex: 1;
+}
+
+.f-0 {
+  flex: none;
+}
+
+.p-1 {
+  padding: 1em;
+}
+
+.m-1 {
+  margin: 1em;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.gap-1 {
+  gap: 1em;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.drag-and-drop[drop-active=true] {
+  background-color: #aaddff;
+  border-color: rgb(0, 146, 190);
+}
+
 .app-container {
   background-color: var(--background);
   font-family: var(--font-family);
