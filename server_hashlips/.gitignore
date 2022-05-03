@@ -6,6 +6,7 @@
 .pnp.js
 /generate
 /hashlips_art_engine
+/public
 
 # testing
 /coverage
