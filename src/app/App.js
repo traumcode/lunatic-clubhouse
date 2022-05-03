@@ -5,6 +5,7 @@ import OnePageApp from "./OnePageApp";
 import Privacy from "../components/Privacy";
 import Terms from "../components/Terms";
 import Whitepaper from "../components/Whitepaper";
+import NftGenerator from "../components/NftGenerator";
 import pdfgen from '../assets/whitepaper/Wp_alpha.pdf'
 
 
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/" element={<OnePageApp/>}/>
                 <Route path='/privacy' element={<Privacy/>}/>
                 <Route path='/terms' element={<Terms/>}/>
+                <Route path='/nftgenerator' element={<NftGenerator/>}/>
                 <Route path='/white' element={<Whitepaper pdf={pdfgen}/>}/>
             </Routes>
         </BrowserRouter>

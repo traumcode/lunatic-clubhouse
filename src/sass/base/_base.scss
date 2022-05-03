@@ -43,6 +43,16 @@ h2 {
   cursor: pointer;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
 .app-container {
   background-color: var(--background);
   font-family: var(--font-family);
