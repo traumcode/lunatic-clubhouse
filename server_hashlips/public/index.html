@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+      <input type="file" multiple="true" />
+      <div id="status"></div>
+      <script defer>
+          const inpt = window.document.body.querySelector("input");
+          const div = window.document.body.querySelector("#status");
+          
+          inpt.onchange = async e => {
+            const formData = new FormData();
+            const fileArr = Array.from(e.target.files);
+
+            /* AICI */
+            const layer = { name: "layer1", images: fileArr.map(f => ({ name: f.name.slice(0, -4), fileName: f.name, rarity: 69 })) }
+            formData.append('layers', JSON.stringify([{...layer, name: "l1"}, {...layer, name: "l2"}]));
+
+            fileArr.map(f => {
+              formData.append('images', f);
+            })
+            try {
+              const { id } = await (await fetch("/generate",{
+                method: 'POST',
+                body: formData
+              })).json();
+
+              if(id){
+                const interval = setInterval(async () => {
+                  try {
+                    const sts = await (await fetch("/generate/"+id)).json();
+                    div.innerText = JSON.stringify(sts, null, 2);
+                    if(sts?.error || sts.status === "finished"){
+                      clearInterval(interval)
+                    }
+
+                    /* AICI */
+                    if(sts.status === "finished"){
+                      const { images, json } = sts.files;
+                      console.log({ images, json });
+                      div.innerHTML = [...images, ...json].map(url => `<a href="${url}" target="_blank">${url}</a>`).join("<br>");
+                    }
+                    
+                  } catch(e) {
+                    clearInterval(interval)
+                    div.innerText = JSON.stringify(e, null, 2);
+                  }
+                }, 500)
+              }
+            } catch(e) {
+              div.innerText = JSON.stringify(e, null, 2);
+            }
+
+          }
+      </script>
+  </body>
+</html>
